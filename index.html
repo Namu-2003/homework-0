@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eye Tracker Analyzer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./static/style.css">
+    <!-- Add Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="navbar container">
+            <h1><i class="fas fa-eye"></i> EyeTrackerAnalyzer</h1>
+            <nav>
+                <a href="#" data-page="home">Home</a>
+                <a href="#" data-page="features">Features</a>
+                <a href="#" data-page="docs">Documentation</a>
+                <a href="#" data-page="login">Login</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Home Page -->
+        <section id="home-page" class="page active">
+            <div class="hero">
+                <div class="container">
+                    <h2 style="color: #fff;">Advanced Eye Tracking Analysis</h2>
+                    <p>Transform your eye tracking data into actionable insights with our state-of-the-art analysis platform.</p>
+                    <a href="#upload" data-page="upload" class="btn">Start Analysis</a>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="features">
+                    <h2 style="color: var(--secondary-color);">Why Choose EyeTracker Analyzer?</h2>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <i class="fas fa-bolt"></i>
+                            <h3>Fast Analysis</h3>
+                            <p>Process large datasets in seconds with our optimized algorithms</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-chart-line"></i>
+                            <h3>Advanced Visualizations</h3>
+                            <p>Generate heatmaps, gaze plots, and scan paths with precision</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-lock"></i>
+                            <h3>Secure & Private</h3>
+                            <p>Your data is encrypted and processed securely on our servers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Page -->
+        <section id="features-page" class="page container">
+            <h2 class="head">Advanced Features</h2>
+            <div class="features-content">
+                <div class="feature-section">
+                    <img src="./static/images/heatmap.png" alt="Heatmap Visualization" class="feature-image">
+                    <div class="feature-text">
+                        <h3>Heatmap Analysis</h3>
+                        <p>Visualize attention patterns with customizable heatmaps. Our advanced algorithms process fixation data to create intuitive visual representations of user attention, showing where users focus most on your interface.</p>
+                    </div>
+                </div>
+
+                <div class="feature-section">
+                    <img src="./static/images/scan_path.png" alt="Scan Path Analysis" class="feature-image">
+                    <div class="feature-text">
+                        <h3>Scan Path Analysis</h3>
+                        <p>Track the sequence of eye movements with detailed scan path visualizations. Understand the natural flow of visual attention across your interface, revealing the order and timing of user gaze patterns.</p>
+                    </div>
+                </div>
+
+                <div class="feature-section">
+                    <img src="./static/images/gaze_plot.png" alt="Gaze Plot Analysis" class="feature-image">
+                    <div class="feature-text">
+                        <h3>Gaze Plot Analysis</h3>
+                        <p>Analyze individual gaze points and their distribution. Our gaze plot visualization helps you understand the exact points where users look, providing detailed insights into visual attention patterns.</p>
+                    </div>
+                </div>
+
+                <div class="feature-section">
+                    <img src="./static/images/saccade_plot.png" alt="Saccade Plot Analysis" class="feature-image">
+                    <div class="feature-text">
+                        <h3>Saccade Plot Analysis</h3>
+                        <p>Study rapid eye movements between fixation points. Our saccade plot visualization helps you understand how users move their eyes across the interface, revealing the dynamics of visual exploration.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Documentation Page -->
+        <section id="docs-page" class="page container">
+            <h2 class="head">Documentation</h2>
+            <p class="docs-intro">Learn how to prepare your data and interpret your analysis results effectively.</p>
+
+            <div class="docs-content">
+                <div class="doc-card">
+                    <i class="fas fa-book"></i>
+                    <h3>Getting Started</h3>
+                    <p>Learn the basics of eye tracking analysis and how to prepare your data for optimal results.</p>
+                    <ul class="doc-links">
+                        <li><a href="https://aisel.aisnet.org/cgi/viewcontent.cgi?article=1062&context=thci" target="_blank">Eye Tracking in Web Design</a></li>
+                        <li><a href="https://andrewbegel.com/papers/A_Practical_Guide_on_Conducting_Eye_Tracking_Studies_in_Software_Engineering.pdf" target="_blank">Eye Tracking Studies Guide</a></li>
+                    </ul>
+                </div>
+
+                <div class="doc-card">
+                    <i class="fas fa-file-alt"></i>
+                    <h3>Data Format Guide</h3>
+                    <p>Understand supported file formats and data structure requirements.</p>
+                    <ul class="doc-links">
+                        <li><a href="https://www.atlassian.com/data/charts/heatmap-complete-guide" target="_blank">Heatmap Visualization Guide</a></li>
+                        <li><a href="https://imotions.com/wp-content/uploads/brochures/iMotions%20Eye%20Tracking%20Analysis%20Guide.pdf" target="_blank">Eye Tracking Data Analysis</a></li>
+                    </ul>
+                </div>
+
+                <div class="doc-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Research Resources</h3>
+                    <p>Technical documentation and research papers on eye tracking.</p>
+                    <ul class="doc-links">
+                        <li><a href="https://www.ijsrp.org/research-paper-0912/ijsrp-p0929.pdf" target="_blank">Eye Tracking Research Paper</a></li>
+                        <li><a href="https://www.jetir.org/papers/JETIR1405004.pdf" target="_blank">Eye Tracking Analysis Methods</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Login Page -->
+        <section id="login-page" class="page">
+            <div class="container">
+                <h2>Login to Your Account</h2>
+                <div class="login-form">
+                    <form id="loginForm">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group"> 
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                        <button type="submit" class="btn">Login</button>
+                    </form>
+                    <p style="margin-top: 20px;">Don't have an account? <a href="#" data-page="register">Register
+                            here</a></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Upload/File Analysis Page -->
+        <section id="upload-page" class="page">
+            <div class="container">
+                <h2 class="head">Analyze Your EyeTracker Data</h2>
+                <div class="upload-box">
+                    <form id="uploadForm" enctype="multipart/form-data">
+                        <div class="file-input-wrapper">
+                            <input type="file" id="fileInput" name="file" accept=".xls,.xlsx,.csv" required>
+                            <label for="fileInput" class="file-label">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                                <span id="fileLabelText">Choose a file or drag it here</span>
+                            </label>
+                        </div>
+                        <div class="form-options">
+                            <label>
+                                <input type="checkbox" name="generate_heatmap" checked> Generate Heatmap
+                            </label>
+                            <label style="float: right;">
+                                <input type="checkbox" name="generate_scanpath" checked> Generate Scan Path
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-analyze" style="position: relative; left: 38%; margin-top: 1rem;">
+                            <i class="fas fa-chart-line"></i> Analyze File
+                        </button>
+                    </form>
+                    <div id="uploadResult" class="result-container" style="display: none;">
+                        <div class="result-content">
+                            <i class="fas fa-check-circle success-icon"></i>
+                            <h3 id="resultTitle">Analysis Complete!</h3>
+                            <p id="resultMessage">Your file has been successfully analyzed.</p>
+
+                            <!-- Analysis Results Display -->
+                            <a id="downloadLink" href="#" class="btn btn-download" style="margin-top: 1rem;">
+                                <i class="fas fa-file-pdf"></i> Analyzed Complete! Get your report in Uploads.
+                            </a>
+                            <div class="analysis-time">
+                                <small>Analysis time: <span id="analysisTime">0</span> seconds</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="errorContainer" class="error-container" style="display: none;">
+                        <div id="downloadLink" class="btn btn-download">
+                            <i class="fas fa-file-pdf"></i> Download PDF Report
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Register Page -->
+        <section id="register-page" class="page">
+            <div class="container">
+                <h2>Create an Account</h2>
+                <div class="login-form">
+                    <form id="registerForm">
+                        <div class="form-group">
+                            <label for="reg_name">Full Name</label>
+                            <input type="text" id="reg_name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="reg_email">Email</label>
+                            <input type="email" id="reg_email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="reg_password">Password</label>
+                            <input type="password" id="reg_password" name="password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="reg_confirm">Confirm Password</label>
+                            <input type="password" id="reg_confirm" name="confirm" required>
+                        </div>
+                        <button type="submit" class="btn">Register</button>
+                    </form>
+                    <p style="margin-top: 20px;">Already have an account? <a href="#" data-page="login">Login here</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>EyeTrackerAnalyzer</h3>
+                    <p>Advanced eye tracking analysis for research and UX professionals.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#" data-page="home">Home</a></li>
+                        <li><a href="#" data-page="features">Features</a></li>
+                        <li><a href="#" data-page="docs">Documentation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="https://www.tobiipro.com/learn-and-support/" target="_blank">Learning Center</a></li>
+                        <li><a href="https://www.tobiipro.com/blog/" target="_blank">Blog</a></li>
+                        <li><a href="https://www.tobiipro.com/learn-and-support/learn/eye-tracking-basics/" target="_blank">Eye Tracking Basics</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright &copy; 2024 EyeTrackerAnalyzer. All rights reserved.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // User session management
+        let currentUser = null;
+
+        // Function to handle login
+        async function handleLogin(email, password) {
+            try {
+                // Simulate login (replace with actual login logic)
+                if (email && password) {
+                    currentUser = { email: email };
+                    localStorage.setItem('currentUser', email);
+                    updateUIForLoggedInUser();
+                    showPage('upload');
+                    return true;
+                }
+                return false;
+            } catch (error) {
+                console.error('Login error:', error);
+                return false;
+            }
+        }
+
+        // Function to handle registration
+        async function handleRegistration(name, email, password) {
+            try {
+                // Simulate registration (replace with actual registration logic)
+                if (name && email && password) {
+                    localStorage.setItem('currentUser', email);
+                    alert('Registration successful! Please login.');
+                    showPage('login');
+                    return true;
+                }
+                return false;
+            } catch (error) {
+                console.error('Registration error:', error);
+                return false;
+            }
+        }
+
+        // Function to handle logout
+        function handleLogout() {
+            currentUser = null;
+            localStorage.removeItem('currentUser');
+            updateUIForLoggedInUser();
+            showPage('home');
+        }
+
+        // Function to update UI based on login status
+        function updateUIForLoggedInUser() {
+            const uploadSection = document.querySelector('.upload-section');
+            const loginLink = document.querySelector('a[data-page="login"]');
+
+            if (currentUser) {
+                uploadSection.style.display = 'block';
+                loginLink.textContent = 'Logout';
+                loginLink.setAttribute('data-action', 'logout');
+            } else {
+                uploadSection.style.display = 'none';
+                loginLink.textContent = 'Login';
+                loginLink.setAttribute('data-action', 'login');
+            }
+        }
+
+        // Initialize user session
+        function initializeUserSession() {
+            const savedUser = localStorage.getItem('currentUser');
+            if (savedUser) {
+                currentUser = { email: savedUser };
+                updateUIForLoggedInUser();
+            } else {
+                updateUIForLoggedInUser();
+            }
+        }
+
+        // Page Navigation
+        document.querySelectorAll('[data-page]').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const pageId = link.getAttribute('data-page');
+                const action = link.getAttribute('data-action');
+
+                if (action === 'logout') {
+                    handleLogout();
+                    return;
+                }
+
+                if (pageId === 'upload' && !currentUser) {
+                    showPage('login');
+                    return;
+                }
+
+                showPage(pageId);
+                history.pushState({ page: pageId }, '', `#${pageId}`);
+            });
+        });
+
+        function showPage(pageId) {
+            // Hide all pages
+            document.querySelectorAll('.page').forEach(page => {
+                page.classList.remove('active');
+            });
+
+            // Show selected page
+            const pageElement = document.getElementById(`${pageId}-page`) ||
+                document.getElementById('home-page');
+            pageElement.classList.add('active');
+
+            // Scroll to top
+            window.scrollTo(0, 0);
+        }
+
+        // Handle back/forward navigation
+        window.addEventListener('popstate', (e) => {
+            const pageId = e.state?.page || 'home';
+            showPage(pageId);
+        });
+
+        // Check initial URL hash
+        function checkInitialHash() {
+            const hash = window.location.hash.substring(1);
+            if (hash) {
+                showPage(hash);
+            } else {
+                showPage('home');
+            }
+        }
+
+        // Form submissions
+        document.addEventListener('DOMContentLoaded', () => {
+            initializeUserSession();
+            checkInitialHash();
+
+            // Login form submission
+            document.getElementById('loginForm')?.addEventListener('submit', async function (e) {
+                e.preventDefault();
+                const email = this.querySelector('#email').value;
+                const password = this.querySelector('#password').value;
+                const success = await handleLogin(email, password);
+                if (!success) {
+                    alert('Invalid email or password');
+                }
+            });
+
+            // Registration form submission
+            document.getElementById('registerForm')?.addEventListener('submit', async function (e) {
+                e.preventDefault();
+                const name = this.querySelector('#reg_name').value;
+                const email = this.querySelector('#reg_email').value;
+                const password = this.querySelector('#reg_password').value;
+                const confirmPassword = this.querySelector('#reg_confirm').value;
+
+                if (password !== confirmPassword) {
+                    alert('Passwords do not match');
+                    return;
+                }
+
+                await handleRegistration(name, email, password);
+            });
+
+            // File upload form submission
+            document.getElementById('uploadForm')?.addEventListener('submit', async function (e) {
+                e.preventDefault();
+                if (!currentUser) {
+                    alert('Please login to upload files');
+                    showPage('login');
+                    return;
+                }
+
+                const formData = new FormData(this);
+                const submitBtn = this.querySelector('button[type="submit"]');
+                const resultContainer = document.getElementById('uploadResult');
+                const errorContainer = document.getElementById('errorContainer');
+
+                // Reset UI
+                resultContainer.style.display = 'none';
+                errorContainer.style.display = 'none';
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Analyzing...';
+
+                const startTime = new Date().getTime();
+
+                try {
+                    const response = await fetch('/analyze', {
+                        method: 'POST',
+                        body: formData
+                    });
+
+                    if (!response.ok) {
+                        const errorData = await response.json();
+                        throw new Error(errorData.error || 'Analysis failed');
+                    }
+
+                    const data = await response.json();
+
+                    // Update UI with results
+                    document.getElementById('heatmapImg').src = data.heatmap_url;
+                    document.getElementById('gazePlotImg').src = data.gaze_plot_url;
+                    document.getElementById('scanPathImg').src = data.scan_path_url;
+                    document.getElementById('saccadePlotImg').src = data.saccade_plot_url;
+
+                    // Update metrics
+                    document.getElementById('metricsContent').textContent = data.metrics;
+
+                    // Update download link
+                    document.getElementById('downloadLink').href = data.pdf_url;
+
+                    // Show results
+                    resultContainer.style.display = 'block';
+
+                    // Update analysis time
+                    const endTime = new Date().getTime();
+                    const duration = ((endTime - startTime) / 1000).toFixed(2);
+                    document.getElementById('analysisTime').textContent = duration;
+
+                } catch (error) {
+                    errorContainer.style.display = 'block';
+                    document.getElementById('errorMessage').textContent = error.message;
+                } finally {
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = '<i class="fas fa-chart-line"></i> Analyze File';
+                }
+            });
+        });
+    </script>
+
+    <!-- Add server-side simulation script -->
+    <script>
+        // This simulates server-side functionality
+        (function () {
+            // Simulated user database
+            let users = [];
+
+            // Load users from localStorage on page load
+            if (localStorage.getItem('users')) {
+                users = JSON.parse(localStorage.getItem('users'));
+            }
+
+            // Function to save users to CSV
+            function saveToCSV() {
+                try {
+                    // Create CSV header
+                    const headers = ['Email', 'Password', 'Name'];
+                    let csvContent = headers.join(',') + '\n';
+
+                    // Add all users to CSV content
+                    users.forEach(user => {
+                        csvContent += `${user.email},${user.password},${user.name}\n`;
+                    });
+
+                    // Create and download CSV file
+                    const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+                    const link = document.createElement('a');
+                    const url = URL.createObjectURL(blob);
+                    link.setAttribute('href', url);
+                    link.setAttribute('download', 'users.csv');
+                    link.style.visibility = 'hidden';
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                } catch (error) {
+                    console.error('Error saving to CSV:', error);
+                }
+            }
+
+            // Handle user registration
+            window.saveUserToCSV = async function (userData) {
+                // Check if user already exists
+                if (users.some(user => user.email === userData.email)) {
+                    return false;
+                }
+
+                // Add new user
+                users.push(userData);
+                localStorage.setItem('users', JSON.stringify(users));
+
+                // Save to CSV file
+                saveToCSV();
+
+                return true;
+            };
+
+            // Handle user authentication
+            window.checkUserCredentials = async function (email, password) {
+                const user = users.find(u => u.email === email && u.password === password);
+                return !!user;
+            };
+
+            // Function to update UI based on login status
+            function updateUIForLoggedInUser() {
+                const uploadSection = document.querySelector('.upload-section');
+                const loginLink = document.querySelector('a[data-page="login"]');
+
+                if (currentUser) {
+                    uploadSection.style.display = 'block';
+                    loginLink.textContent = 'Logout';
+                    loginLink.setAttribute('data-action', 'logout');
+                } else {
+                    uploadSection.style.display = 'none';
+                    loginLink.textContent = 'Login';
+                    loginLink.setAttribute('data-action', 'login');
+                }
+            }
+
+            // Initialize user session
+            function initializeUserSession() {
+                const savedUser = localStorage.getItem('currentUser');
+                if (savedUser) {
+                    currentUser = { email: savedUser };
+                    updateUIForLoggedInUser();
+                } else {
+                    updateUIForLoggedInUser();
+                }
+            }
+
+            // Call initializeUserSession when the page loads
+            document.addEventListener('DOMContentLoaded', initializeUserSession);
+        })();
+    </script>
+    <script src="../static/js/main.js"></script>
+</body>
+
+</html>
